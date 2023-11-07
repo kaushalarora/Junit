@@ -1,0 +1,127 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.calculator;
+
+/**
+ *
+ * @author Junit_316
+ */
+public class Calculator {
+
+    /**
+     *
+     * @param a
+     * @param b
+     * @return Add of a,b
+     */
+    public static int Add_316(int a, int b) {
+        return a + b;
+    }
+
+    /**
+     *
+     * @param a
+     * @param b
+     * @return Multiply of a,b
+     */
+    public static int Multiply_316(int a, int b) {
+        return a * b;
+    }
+
+    /**
+     *
+     * @param a
+     * @param b
+     * @return Division of a,b
+     */
+    public static long Division_316(int a, int b) {
+        return a / b;
+    }
+
+    /**
+     *
+     * @param a
+     * @param b
+     * @return Subtract of a,b
+     */
+    public static int Subtract_316(int a, int b) {
+        return a - b;
+    }
+}
+
+
+---------------------------------------------------------------------------------------------------------------
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.calculator;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ *
+ * @author Junit_316
+ */
+public class CalculatorTest {
+
+    /**
+     * Test of Add_316 method, of class Calculator.
+     */
+    @Test
+    public void testAdd_316() {
+        System.out.println("Add_316");
+        int a = 10;
+        int b = 10;
+        int expResult = 20;
+        int result = Calculator.Add_316(a, b);
+        assertEquals("Add of two numbers: ", expResult, result);
+    }
+
+    /**
+     * Test of Multiply_316 method, of class Calculator.
+     */
+    @Test
+    public void testMultiply_316() {
+        System.out.println("Multiply_316");
+        int a = 5;
+        int b = 5;
+        int expResult = 25;
+        int result = Calculator.Multiply_316(a, b);
+        assertEquals("Multiply of two numbers: ", expResult, result);
+    }
+
+    /**
+     * Test of Division_316 method, of class Calculator.
+     */
+    @Test
+    public void testDivision_316() {
+        System.out.println("Division_316");
+        int a = 40;
+        int b = 4;
+        int expResult = 10;
+        long result = Calculator.Division_316(a, b);
+        assertEquals("Division of two numbers:", expResult, result);
+    }
+
+    /**
+     * Test of Subtract_316 method, of class Calculator.
+     */
+    @Test
+    public void testSubtract_316() {
+        System.out.println("Substract_316");
+        int a = 40;
+        int b = 30;
+        int expResult = 10;
+        int result = Calculator.Subtract_316(a, b);
+        assertEquals("Subtract of two numbers: ", expResult, result
+        );
+    }
+
+}
